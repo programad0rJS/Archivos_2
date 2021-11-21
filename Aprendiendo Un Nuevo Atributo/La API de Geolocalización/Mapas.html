@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Geolocalización en el Mapa</title>
+</head>
+
+<body>
+    <div id="mapa" style="height: 1000px; width: 1000px;"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgZZK8umUqJn8d5CoIZqWPJ_qtMfqD9q0&callback=initMap"
+        async defer>
+    </script>
+
+
+    <script>
+        function initMap() {
+            mapa = new google.maps.Map(document.querySelector('#mapa'), {
+                center: {
+                    lat: 13.3456,
+                    lng: -123.456,
+                    
+                },
+                zoom: 18
+            });
+
+        }
+    </script>
+</body>
+
+</html>
